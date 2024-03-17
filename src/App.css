@@ -11,11 +11,11 @@
   width:250px;
   display:flex ;
   flex-direction: column;
+  align-items: center;
   gap: 1rem; 
   margin: 32px;
   padding: 16px; 
-  background-color: #011627;
-  align-items: center;
+  background-color: #17191b;
   border-radius: 15px;
 }
 .intro {
@@ -35,6 +35,8 @@
 .title {
   color: #4d5bce;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .hello{
@@ -57,6 +59,16 @@ img {
 .info {
   padding: 10px 0;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
 }
 
 .socials a {
@@ -97,6 +109,65 @@ ul .home-name{
 ul .contact {
   border: none;
 }
+/* about css */
 
+.about {
+  width: 950px;
+  padding: 32px 16px;
+  border: 1px solid black;
+}
 
+.code-icon {
+  width: auto;
+  position: relative;
+  top: 10px;
+  left: 280px;
+
+}
+/* skill css */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 3rem;
+}
+
+.skillCard-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.skill-heading {
+  color: #12f7d6 ;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+/* skill-card css*/
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #98faec;
+  color: #43454d;
+  padding: 16px;
+  border-radius: 5px;
+  border-left: 4px solid #0c73b8;
+  width: 250px;
+}
+
+.skill-card p{
+  font-size: 13px;
+}
 
