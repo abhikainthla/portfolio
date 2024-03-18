@@ -1,17 +1,23 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
         <div  className="navbar">
         <ul>
 
-            <li className='home-name'>abhishek-kainthla</li>
-            <li className='about'>_about-me</li>
-            <li className='projects'>_projects</li>
-            <li className='more'>_more</li>
 
-            <li className='contact'>_contact</li>
+            <li className='about'>
+             <NavLink to="/">_about-me</NavLink> 
+              </li>
+            <li className='projects'>
+            <NavLink to="/projects">_projects</NavLink>               </li>
+            <li className='more'>
+              _more
+              </li>
+
+            <li className='contact'>
+            <NavLink to="/contact">_contact</NavLink>               </li>
 
         </ul>
         </div>
