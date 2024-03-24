@@ -13,7 +13,7 @@ function Navbar() {
             <li className='projects'>
             <NavLink to="/projects">_projects</NavLink>               </li>
             <li className='more'>
-              _more
+            <NavLink to="/more">_more</NavLink>               
               </li>
 
             <li className='contact'>

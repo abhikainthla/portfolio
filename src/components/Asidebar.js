@@ -17,19 +17,19 @@ function Asidebar() {
             <div className='name'>
             <h1>Abhishek Kainthla</h1>
             </div>
-            <p className='title'> <IoIosArrowForward style={{marginBottom:"-2.5px"}} /> Font-end Developer</p>
+            <p className='title'> <IoIosArrowForward style={{marginBottom:"-2.5px"}} /> Front-end Developer</p>
         </div>
-    <div><p className='hello'>_about-me</p></div>
+    <div><p className='hello'>npm i basics</p></div>
     <div className='info-container'>
     <hr/>
     <p className='info'><GiSandsOfTime style={{marginBottom:"-2.5px"}}/> Age <TbEqualDouble style={{marginBottom:"-2.5px"}} /> 23</p>
     <p className='info'><FaLocationDot style={{marginBottom:"-2.5px"}} /> Shimla, India</p>
     </div>
     <div className='socials'>
-        <a href='#'><FaGithub /></a>
-        <a href="#"><FaLinkedin /></a>
-        <a href='#'><FaInstagram /></a>
-        <a href='#'><FaXTwitter /></a>
+        <a href='https://github.com/abhikainthla'><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/abhishek-kainthla-321537191/"><FaLinkedin /></a>
+        <a href='https://www.instagram.com/abhi._.kainthla/'><FaInstagram /></a>
+        <a href='https://twitter.com/abhi_kainthla'><FaXTwitter /></a>
     </div>
     </div>
   )

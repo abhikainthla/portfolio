@@ -2,9 +2,11 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Asidebar from '../components/Asidebar'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 function ContactScreen() {
   return (
+    <>
     <div className='container'>
         <div>
         <Asidebar/>
@@ -14,6 +16,9 @@ function ContactScreen() {
         <Contact/>
         </div>
     </div>
+    <Footer/>
+    </>
+    
   )
 }
 

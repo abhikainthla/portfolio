@@ -17,19 +17,17 @@ function Contact() {
   };
 
   return (
+    <div>
     <div className='contact'>
         <div>
             <h1>Thankyou for visiting my portfolio</h1>
-            
-
-
 
         </div>
-        <div className='email'>
+        <div onClick={copyEmailToClipboard} className='email'>
             <h2>Like what you see? here is how I can be reached.</h2>
             <div className='id'>
                 <p>{email}</p>
-                <button onClick={copyEmailToClipboard}>Copy Email</button>
+                <button >Copy Email</button>
             </div>
         </div>
         <div className='social-contacts'>
@@ -40,6 +38,7 @@ function Contact() {
                 ))}
             </ul>
         </div>
+    </div>
     </div>
   );
 }

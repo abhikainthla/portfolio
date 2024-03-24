@@ -1,9 +1,9 @@
 import React from 'react'
-import About from '../components/About'
-import Asidebar from '../components/Asidebar'
+import More from '../components/More'
 import Navbar from '../components/Navbar'
+import Asidebar from '../components/Asidebar'
 import Footer from '../components/Footer'
-function AboutScreen() {
+function MoreScreeen() {
   return (
     <>
     <div className='container'>
@@ -12,13 +12,12 @@ function AboutScreen() {
         </div>
         <div>
         <Navbar/>
-        <About/>
+        <More/>
         </div>
     </div>
     <Footer/>
     </>
-
-  )
+      )
 }
 
-export default AboutScreen
+export default MoreScreeen

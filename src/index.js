@@ -9,6 +9,7 @@ import ProjectsScreen from './screen/ProjectsScreen';
 import ContactScreen from './screen/ContactScreen';
 import './App.css';
 import NotFound from './screen/NotFound';
+import MoreScreeen from './screen/MoreScreeen';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element:  <ProjectsScreen />,
+  },
+  {
+    path: '/more',
+    element: <MoreScreeen />,
   },
   {
     path: '/contact',
