@@ -5,18 +5,24 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 function AboutScreen() {
   return (
-    <>
+    <div className='main'>
     <div className='container'>
-        <div>
+        <div className='asidebar'>
         <Asidebar/>
         </div>
-        <div>
-        <Navbar/>
-        <About/>
+        <div  className="content">
+          <div>
+          <Navbar/>
+          </div>
+          <div>
+          <About/>
+          </div>
         </div>
     </div>
+    <div>
     <Footer/>
-    </>
+    </div>
+    </div>
 
   )
 }
