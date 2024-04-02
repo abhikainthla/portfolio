@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa";
 
 function Asidebar() {
   return (
@@ -20,15 +21,13 @@ function Asidebar() {
         <div className="name">
           <h1>Abhishek Kainthla</h1>
         </div>
-        <p className="title">
+        <div className="title">
           {" "}
-          <IoIosArrowForward style={{ marginBottom: "-2.5px" }} /> Front-end
-          Developer
-        </p>
+          <p><IoIosArrowForward style={{ marginBottom: "-2.5px" }} /> Front-end
+          Developer</p>
+        </div>
       </div>
-      <div>
-        <p className="hello">npm i basics</p>
-      </div>
+
       <div className="info-container">
         <hr />
         
@@ -38,6 +37,9 @@ function Asidebar() {
         </p>
         <p className="info">
           <FaLocationDot style={{ marginBottom: "-2.5px" }} /> Shimla, India
+        </p>
+        <p className="info">
+          <FaGraduationCap style={{ marginBottom: "-2.5px" }} /> BCA
         </p>
       </div>
       <div className="socials">

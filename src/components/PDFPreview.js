@@ -26,7 +26,7 @@ const PDFPreview = () => {
 
   return (
     <div className="pdf-preview-container">
-      <h2>My Resume</h2>
+      <h2 className='blog-header'>_myResume</h2>
       <div className='previewer'>
       <Document file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
