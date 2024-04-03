@@ -5,7 +5,7 @@ import Asidebar from '../components/Asidebar'
 import Footer from '../components/Footer'
 function MoreScreeen() {
   return (
-    <>
+    <div className='main'>
     <div className='container'>
         <div>
         <Asidebar/>
@@ -16,7 +16,7 @@ function MoreScreeen() {
         </div>
     </div>
     <Footer/>
-    </>
+    </div>
       )
 }
 

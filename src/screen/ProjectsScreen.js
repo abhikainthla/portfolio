@@ -5,7 +5,7 @@ import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 function ProjectsScreen() {
   return (
-    <>
+    <div className='main'>
     <div className='container'>
         <div>
         <Asidebar/>
@@ -16,7 +16,7 @@ function ProjectsScreen() {
         </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
 

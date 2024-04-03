@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 function ContactScreen() {
   return (
-    <>
+    <div className='main'>
     <div className='container'>
         <div>
         <Asidebar/>
@@ -17,7 +17,7 @@ function ContactScreen() {
         </div>
     </div>
     <Footer/>
-    </>
+    </div>
     
   )
 }

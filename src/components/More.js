@@ -2,8 +2,12 @@ import React from 'react';
 import DownloadPDF from './ResumeDownloader';
 import PDFPreview from './PDFPreview';
 import Blogs from './Blogs';
-
+import { useState } from 'react';
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import ReactSimplyCarousel from 'react-simply-carousel';
 function More() {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
   const blogs = [
     {
       title: "Enhancing React App Performance With “useCallback” Hook.",
@@ -34,11 +38,63 @@ function More() {
   return (
     <div className='more'>
       <div className='blog-section'>
-        <h1 className='blog-header'>_myBlogs</h1>
-        
+      <h1 className='blog-header'>_myBlogs</h1>
+      <ReactSimplyCarousel
+        activeSlideIndex={activeSlideIndex}
+        onRequestChange={setActiveSlideIndex}
+        itemsToShow={1}
+        itemsToScroll={1}
+        forwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: 'center',
+            background: 'black',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'white',
+            cursor: 'pointer',
+            fontSize: '20px',
+            height: 30,
+            lineHeight: 1,
+            textAlign: 'center',
+            width: 30,
+          },
+          children: <span><MdArrowForwardIos style={{marginLeft:"5px"}}/></span>,
+        }}
+        backwardBtnProps={{
+          //here you can also pass className, or any other button element attributes
+          style: {
+            alignSelf: 'center',
+            background: 'black',
+            border: 'none',
+            borderRadius: '50%',
+            color: 'white',
+            cursor: 'pointer',
+            fontSize: '20px',
+            height: 30,
+            lineHeight: 1,
+            textAlign: 'center',
+            width: 30,
+          },
+          children: <span><MdArrowBackIos style={{marginLeft:"10px"}}/></span>,
+        }}
+        responsiveProps={[
+          {
+            itemsToShow: 1,
+            itemsToScroll: 1,
+            minWidth: 768,
+          },
+        ]}
+        speed={300}
+        easing="linear"
+      >
+        {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
         {blogs.map((blog, index) => (
           <Blogs key={index} data={blog} />
         ))}
+      </ReactSimplyCarousel>
+        
+
       </div>
       <div className='pdf'>
       <div>

@@ -14,7 +14,8 @@ function About() {
     <div className="about">
       <div className="about-container">
         <p>
-        <span className="helloWorld"> <IoIosArrowForward style={{marginBottom:"2.5px", display:"inline-block"}}/> Hello World!</span> I'm Abhishek Kainthla, a Front-End Web Developer with a
+        <span className="helloWorld"> <IoIosArrowForward style={{marginBottom:"2.5px", display:"inline-block"}}/> Hello World!</span><br/><span className="name"> I'm Abhishek Kainthla</span><br/><br/>
+         A Front-End Web Developer with a
           passion for creating visually appealing websites. Specializing in
           turning ideas into interactive digital realities, I constantly strive
           to craft new and innovative solutions that captivate audiences.

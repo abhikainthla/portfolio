@@ -10,7 +10,7 @@ function ProjectCard(props) {
         <div>
             <p>{props.desc}</p>
             </div>
-            <div>
+            <div className='view-btn'>
             <a href={props.link}><button>View Project</button></a>
         </div>
         </div>
