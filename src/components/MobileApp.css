@@ -101,7 +101,7 @@
     font-weight: 600;  
 }
 
-.title p {
+.mobile-container .title p {
     color: #4d5bce;
     font-weight: 600;
     font-size: 22px;
@@ -117,7 +117,7 @@
       blink-caret .75s step-end infinite;
 }
 
-.socials a {
+.mobile-container .socials a {
     width: 50px;
     height: auto;
 }
@@ -160,7 +160,7 @@
 }
 
 /* skills-mobile  */
-.skills {
+.skills-mobile .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +174,7 @@
     height: 100vh;
   }
 
-  .skills-mobile .code-icon {
+  .skills-mobile .skills-mobile .code-icon {
     width: auto;
     position: relative;
     top: 10px;
@@ -188,14 +188,14 @@
     margin-bottom: 1rem;
   }
   
-  .skill-icons {
+  .skills-mobile .skill-icons {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 3rem;
   }
   
-  .skill-heading {
+  .skills-mobile .skill-heading {
     color: #12f7d6 ;
     font-size: 32px;
     text-decoration: underline;
@@ -216,6 +216,6 @@
     animation: fadeIn 1s ease forwards;
   }
   
-  .skill-card p{
+  .skills-mobile .skill-card p{
     font-size: 18px;
   }
