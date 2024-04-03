@@ -10,6 +10,7 @@ function MobileNav() {
             <ul>
                 <li>_about</li>
                 <li>_projects</li>
+                <li>_more</li>
                 <li>_contact</li>
             </ul>
         </div>

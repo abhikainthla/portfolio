@@ -1,12 +1,18 @@
 .mobile-nav{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
     border: 1px solid #1e2d3d;
+    border-radius: 0 0 10px 10px;
     height: 68px;
     background-color: #011627;
     color: #fff;
+    width: 100%;
+    
 }
 .mobile-nav p {
     font-size: 14px;
@@ -29,30 +35,187 @@
     border-radius: 50%;
     overflow: hidden;
     width: 250px;
+    border: 3px solid #12f7d6;
 }
 
-.mobile-content {
+
+.mobile-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 32px 16px;
+    padding: 72px 16px 32px 16px;
     gap: 1rem;
+    background-color: #17191b;
+    border-radius: 15px;
+    animation: slideInRight 1s ease forwards;
+    height: 100vh;
+    margin-bottom:16px;
+
+}
+
+.mob-intro {
+    padding: 32px 0;
 }
 
 .mob-info {
     padding: 10px 0;
     font-weight: 500;
+    font-size: 16px;
     display: flex;
     align-items: center;
     gap: .5rem;
+    color: #fff;
+}
+
+.mob-resume {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0;
 }
 
 .mob-resume button {
     background-color: #12f7d6;
     color: #FFFFFF;
-    padding: 4px  8px;
+    padding: 8px  16px;
     font-size: 14px;
     border-radius: 5px;
     animation: fadeIn 1s ease forwards;
 }
+
+.helloWorld-mobile{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #4d5bce ;
+    font-weight: 600;
+}
+
+.name-mobile{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #12f7d6 ;
+    font-weight: 600;  
+}
+
+.title p {
+    color: #4d5bce;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #4d5bce; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.socials a {
+    width: 50px;
+    height: auto;
+}
+
+/* about-mobile */
+.about-mobile  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 72px 16px 64px 16px;
+    background-color: #282f37;
+    color: #FFFFFF;
+    margin-bottom:16px;
+    border-radius: 10px;
+    animation: slideInUp 1s ease forwards;
+    height: 100vh;
+}
+
+.about-heading{
+    color: #12f7d6 ;
+    font-size: 32px;
+    text-decoration: underline;
+    text-align: center;
+}
+.about-mobile span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #4d5bce;
+}
+.about-mobile p{
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.para-italic {
+    border-left: 2px  solid rgba(255, 255, 255, 0.5);
+    text-align: justify;
+    padding-left: 16px;
+}
+
+/* skills-mobile  */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 3rem;
+    padding: 32px 0;
+    background-color: #282d33;
+    border-radius: 10px;
+    animation: slideInUp 1s ease forwards;
+    height: 100vh;
+  }
+
+  .skills-mobile .code-icon {
+    width: auto;
+    position: relative;
+    top: 10px;
+    left: 160px;
+  }
+  
+  .skillCard-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+  
+  .skill-heading {
+    color: #12f7d6 ;
+    font-size: 32px;
+    text-decoration: underline;
+  }
+  
+  /* skill-card css*/
+  .skills-mobile .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #98faec;
+    color: #43454d;
+    padding: 16px;
+    border-radius: 5px;
+    width: 160px;
+    height: 160px;
+    border-left: 4px solid #0c73b8;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .skill-card p{
+    font-size: 18px;
+  }
