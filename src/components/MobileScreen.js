@@ -225,7 +225,7 @@ function MobileScreen() {
           </div>
           <div>
             <h2 className="skill-heading">Skills</h2>
-            <p style={{ fontSize: "18px", color: "#FFFFFF", textAlign:"center" }}>
+            <p style={{ fontSize: "18px", color: "#FFFFFF", textAlign:"center", padding:"0 12px" }}>
               I am starving never to stop learning and improving
             </p>
           </div>

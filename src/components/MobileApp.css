@@ -1,37 +1,39 @@
-.mobile-nav{
+.mobile-nav {
     position: fixed;
     top: 0px;
     z-index: 10;
     border: 1px solid #1e2d3d;
     border-radius: 0 0 10px 10px;
-    height: 68px;
+    height: auto;
     background-color: #011627;
     color: #fff;
-    width: 100vw;
-    
-}
-
-.mobile-nav a{
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 5px;
+    width: 100%;
+    padding: 16px 0;
   }
   
-
-.mobile-nav ul{
+  .mobile-nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-}
-
-.mobile-nav ul li{
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid #1e2d3d;  
-    padding: 16px;
-}
-
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-nav a{
+    border: 1px solid #1e2d3d;
+  }
+  
+  .nav-link {
+    padding: 15px 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-link.active {
+    background-color: #12f7d6 !important;
+    color: #011627 !important; /* Adjust text color as needed */
+  }
+  
 .mob-img {
     border-radius: 50%;
     overflow: hidden;
@@ -50,7 +52,7 @@
     background-color: #17191b;
     border-radius: 15px;
     animation: slideInRight 1s ease forwards;
-    height: 100vh;
+    height: 100%;
     margin-bottom:16px;
     width: 100%;
 
@@ -135,7 +137,7 @@
     margin-bottom:16px;
     border-radius: 10px;
     animation: slideInUp 1s ease forwards;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -176,7 +178,7 @@
     background-color: #282d33;
     border-radius: 10px;
     animation: slideInUp 1s ease forwards;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-bottom:16px;
 
@@ -186,10 +188,10 @@
     width: auto;
     position: relative;
     top: 10px;
-    left: 160px;
+    left: 130px;
   }
   
-  .skillCard-container {
+  .skills-mobile.skillCard-container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -200,7 +202,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 2rem;
   }
   
   .skills-mobile .skill-heading {
@@ -239,14 +241,14 @@
     background-color: #282d33;
     border-radius: 10px;
     animation: slideInUp 1s ease forwards;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-bottom:16px;
 
   }
   .mob-project-container {
     height: 450px;
-    width: 300px;
+    width: auto;
   }
   .mob-project-name{
     color: #12f7d6 ;
@@ -319,7 +321,7 @@
     background-color: #282d33;
     border-radius: 10px;
     animation: slideInUp 1s ease forwards;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-bottom:16px;
 
@@ -426,7 +428,7 @@
     background-color: #17191b;
     border-radius: 10px;
     animation: slideInUp 1s ease forwards;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -542,4 +544,34 @@
   
  .mobile-contact .footer .footer-icons {
     animation: heartbeat 1.5s infinite;
+  }
+
+  /* media query */
+  @media (max-width: 420px){
+    .mobile-contact , .about-mobile, .skills-mobile, .Mobile-project, .mobile-blogs, .mobile-container{
+        width: 100%;
+        
+    }
+    .mobile-nav {
+        width:100%;
+    }
+  }
+
+  @media (max-width: 370px){
+    .nav-link {
+        padding: 15px 5px;
+    }
+    .skills-mobile .skill-card {
+        height: 180px;
+        width: 145px;
+    }
+    .skills-mobile  .skill-icons{
+        gap: 1rem;
+    }
+    .Mobile-project .mob-project-card{
+        width: 260px;
+    }
+    .mobile-blogs .blogs{
+        width: 260px;
+    }
   }

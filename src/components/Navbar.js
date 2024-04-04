@@ -8,16 +8,16 @@ function Navbar() {
 
 
             <li className='about'>
-             <NavLink to="/">_about-me</NavLink> 
+             <NavLink to="/" activeClassName='active'>_about-me</NavLink> 
               </li>
             <li className='projects'>
-            <NavLink to="/projects">_projects</NavLink>               </li>
+            <NavLink to="/projects" activeClassName='active'>_projects</NavLink>               </li>
             <li className='more'>
-            <NavLink to="/more">_more</NavLink>               
+            <NavLink to="/more" activeClassName='active'>_more</NavLink>               
               </li>
 
             <li className='contact'>
-            <NavLink to="/contact">_contact</NavLink>               </li>
+            <NavLink to="/contact" activeClassName='active'>_contact</NavLink>               </li>
 
         </ul>
         </div>
