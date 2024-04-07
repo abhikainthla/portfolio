@@ -915,3 +915,22 @@ color: #fff!important;
     display: block;
   }
 }
+
+/* logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #17191b;
+  width: 100%;
+  color: #fff;
+}
+
+.logo-container span {
+  font-size: 24px; /* You can adjust the font size as needed */
+  font-weight: bold; /* You can adjust the font weight as needed */
+  margin-left: 5px; /* Adjust the spacing between icon and text */
+}
+
+/* You can add additional styling for the icon if needed */
