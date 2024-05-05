@@ -32,6 +32,14 @@ function More() {
       image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*VEtkfwjwXWze9NdPant28Q.png",
       tag: ["React", "lazy loading"],
       readTime: "3 min read",
+    },
+    {
+      title:"Three-tier architecture in web development",
+      content:"When it comes to build good and scalable applications we generally rely on the technique known as Three-tier architecture. It organises application into three different layers. It divides application into three interconnected layers: presentation, application (or business logic), and data.",
+      link:"https://medium.com/@abhikainthla001/three-tier-architecture-in-web-development-c0ab0c61b053",
+      image:"https://tse2.mm.bing.net/th?id=OIP.opHsqQrb4exqr9-5-bja4AHaFf&pid=Api&P=0&h=180",
+      tag : ["Web Development","Three-tier Architecture" ],
+      readTime : "3 min read",
     }
   ];
 

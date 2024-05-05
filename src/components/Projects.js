@@ -9,6 +9,7 @@ import Screenshot7 from './assets/Screenshot7 (83).png';
 import Screenshot8 from './assets/Screenshot8 (84).png';
 import Screenshot9 from './assets/Screenshot9 (85).png';
 import Screenshot10 from './assets/Screenshot10 (86).png';
+import Screenshot11 from  './assets/Screenshot11 (95).png';
 import ProjectCard from './ProjectCard';
 import Buttons from './Buttons';
 
@@ -16,6 +17,12 @@ function Projects() {
     const [filter, setFilter] = useState(null); // State to keep track of selected filter
 
     const data = [{
+        link:"https://github.com/abhikainthla/food-cart",
+        title:"Food-cart",
+        description:"Welcome to the Food Delivery App! This is a web application built using React that allows users to order various kind of food and have it delivered to their doorstep.",
+        lang:"REACT",
+        img:Screenshot11,
+    },{
         link: "https://github.com/abhikainthla/OLX-Clone",
         title: "OLX Clone",
         description: "Welcome to the OLX Clone project! This project aims to replicate the functionality of the popular online marketplace, OLX.",

@@ -8,7 +8,6 @@ import { FiMonitor } from "react-icons/fi";
 import SkillsCard from "./SkillsCard";
 import { CiMobile2 } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
-import Logo from "./Logo";
 function About() {
   return (
     <div>

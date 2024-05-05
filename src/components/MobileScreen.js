@@ -30,6 +30,7 @@ import Screenshot7 from './assets/Screenshot7 (83).png';
 import Screenshot8 from './assets/Screenshot8 (84).png';
 import Screenshot9 from './assets/Screenshot9 (85).png';
 import Screenshot10 from './assets/Screenshot10 (86).png';
+import Screenshot11 from  './assets/Screenshot11 (95).png';
 import ProjectCard from './ProjectCard';
 import pdfFile from "./assets/Abhishek_Kainthla_-_Frontend_Developer.pdf";
 import ReactSimplyCarousel from 'react-simply-carousel';
@@ -42,6 +43,12 @@ function MobileScreen() {
 
 
   const data = [{
+    link:"https://github.com/abhikainthla/food-cart",
+    title:"Food-cart",
+    description:"Welcome to the Food Delivery App! This is a web application built using React that allows users to order various kind of food and have it delivered to their doorstep.",
+    lang:"REACT",
+    img:Screenshot11,
+},{
       link: "https://github.com/abhikainthla/OLX-Clone",
       title: "OLX Clone",
       description: "Welcome to the OLX Clone project! This project aims to replicate the functionality of the popular online marketplace, OLX.",
@@ -129,6 +136,14 @@ function MobileScreen() {
       image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*VEtkfwjwXWze9NdPant28Q.png",
       tag: ["React", "lazy loading"],
       readTime: "3 min read",
+    },
+    {
+      title:"Three-tier architecture in web development",
+      content:"When it comes to build good and scalable applications we generally rely on the technique known as Three-tier architecture. It organises application into three different layers. It divides application into three interconnected layers: presentation, application (or business logic), and data.",
+      link:"https://medium.com/@abhikainthla001/three-tier-architecture-in-web-development-c0ab0c61b053",
+      image:"https://tse2.mm.bing.net/th?id=OIP.opHsqQrb4exqr9-5-bja4AHaFf&pid=Api&P=0&h=180",
+      tag : ["Web Development","Three-tier Architecture" ],
+      readTime : "3 min read",
     }
   ];
 
